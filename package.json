@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+    "prod:win": "set NODE_ENV=production && npx tailwindcss -o ./css/style.css --minify",
+    "prod": "NODE_ENV=production && npx tailwindcss -o ./css/style.css --minify",
+    "dev": "npx tailwindcss -o ./css/style.css --minify",
+    "watch": "npx tailwindcss -o ./css/style.css --minify -w"
+  }
+}
