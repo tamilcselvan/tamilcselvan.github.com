@@ -1,11 +1,41 @@
 {
-  "dependencies": {
-    "tailwindcss": "^2.2.19"
-  },
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Tamil Selvan C's professional portfolio website",
+  "main": "index.html",
   "scripts": {
-    "prod:win": "set NODE_ENV=production && npx tailwindcss -o ./css/style.css --minify",
-    "prod": "NODE_ENV=production && npx tailwindcss -o ./css/style.css --minify",
-    "dev": "npx tailwindcss -o ./css/style.css --minify",
-    "watch": "npx tailwindcss -o ./css/style.css --minify -w"
-  }
+    "dev": "npx tailwindcss -i ./scss/style.scss -o ./css/style.css --watch",
+    "build": "npx tailwindcss -i ./scss/style.scss -o ./css/style.css --minify",
+    "build:prod": "NODE_ENV=production npx tailwindcss -i ./scss/style.scss -o ./css/style.css --minify",
+    "serve": "npx http-server . -p 3000 -o",
+    "dev:serve": "concurrently \"npm run dev\" \"npm run serve\"",
+    "lint:css": "npx stylelint \"scss/**/*.scss\"",
+    "format": "npx prettier --write \"**/*.{html,css,scss,js,json,md}\"",
+    "optimize:images": "npx imagemin assets/images/**/* --out-dir=assets/images/optimized"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "http-server": "^14.1.1",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.1.0"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "tailwindcss",
+    "responsive",
+    "accessibility"
+  ],
+  "author": "Tamil Selvan C",
+  "license": "MIT"
 }

@@ -1,21 +1,925 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tamilcselvan.com</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Tamil Selvan C - Solution Architect & Technical Leader</title>
+    <meta name="title" content="Tamil Selvan C - Solution Architect & Technical Leader">
+    <meta name="description" content="Experienced Solution Architect and Technical Leader with 13+ years in scalable web and mobile applications, DevOps automation, and cloud infrastructure.">
+    <meta name="keywords" content="Solution Architect, Technical Leader, PHP, Python, AWS, DevOps, Backend Development, Cloud Infrastructure">
+    <meta name="author" content="Tamil Selvan C">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tamilcselvan.com/">
+    <meta property="og:title" content="Tamil Selvan C - Solution Architect & Technical Leader">
+    <meta property="og:description" content="Experienced Solution Architect and Technical Leader with 13+ years in scalable web and mobile applications, DevOps automation, and cloud infrastructure.">
+    <meta property="og:image" content="https://tamilcselvan.com/assets/portfolio.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tamilcselvan.com/">
+    <meta property="twitter:title" content="Tamil Selvan C - Solution Architect & Technical Leader">
+    <meta property="twitter:description" content="Experienced Solution Architect and Technical Leader with 13+ years in scalable web and mobile applications, DevOps automation, and cloud infrastructure.">
+    <meta property="twitter:image" content="https://tamilcselvan.com/assets/portfolio.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=1.0.1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="assets/portfolio.jpg" as="image" type="image/jpeg">
+    
+    <!-- Anime.js for creative animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tamil Selvan C",
+      "jobTitle": "Solution Architect & Technical Leader",
+      "description": "Experienced Solution Architect and Technical Leader with 13+ years in scalable web and mobile applications, DevOps automation, and cloud infrastructure.",
+      "url": "https://tamilcselvan.com",
+      "sameAs": [
+        "https://linkedin.com/in/tamilselvan",
+        "https://github.com/tamilselvan"
+      ],
+      "knowsAbout": [
+        "Solution Architecture",
+        "Technical Leadership",
+        "PHP Development",
+        "Python Development",
+        "AWS Cloud Services",
+        "DevOps Automation",
+        "Backend Development",
+        "Infrastructure Management"
+      ]
+    }
+    </script>
 </head>
-<body class="bg-blue-300 font-sans" style="font-family: 'Indie Flower';">
-    <div class="flex h-screen justify-center items-center">
-        <div class="text-center">
-            <h2 class="text-center text-2xl">Hey, I'm</h2>
-            <h1 class="text-center text-5xl">Tamil Selvan C</h1>
+<body class="font-sans antialiased">
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-50">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navigation" class="fixed top-0 left-0 right-0 z-40 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700 transition-all duration-300" role="navigation" aria-label="Main navigation" style="background-color: rgb(255, 255, 255); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
+        <style>
+            .dark #navigation {
+                background-color: rgb(15, 23, 42) !important;
+            }
+        </style>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="#hero" class="text-xl lg:text-2xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
+                        Tamil Selvan C
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#hero" data-nav-link class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 ease-in-out">Home</a>
+                        <a href="#about" data-nav-link class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 ease-in-out">About</a>
+                        <a href="#portfolio" data-nav-link class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 ease-in-out">Portfolio</a>
+                        <a href="#contact" data-nav-link class="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 ease-in-out">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu Button -->
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle Button -->
+                    <button 
+                        id="theme-toggle"
+                        class="p-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        aria-label="Toggle theme"
+                        title="Toggle theme"
+                    >
+                        <span data-theme-icon class="text-xl">🌙</span>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button 
+                        data-mobile-menu-button 
+                        class="md:hidden p-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                        aria-label="Toggle mobile menu"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div data-mobile-menu id="mobile-menu" class="md:hidden fixed inset-0 top-16 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 transform translate-x-full transition-transform duration-300 ease-in-out">
+                <div class="px-4 py-6 space-y-4">
+                    <a href="#hero" data-nav-link class="block py-3 text-lg text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 ease-in-out">Home</a>
+                    <a href="#about" data-nav-link class="block py-3 text-lg text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 ease-in-out">About</a>
+                    <a href="#portfolio" data-nav-link class="block py-3 text-lg text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 ease-in-out">Portfolio</a>
+                    <a href="#contact" data-nav-link class="block py-3 text-lg text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-200 ease-in-out">Contact</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 relative overflow-hidden pt-20 lg:pt-24" style="background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 50%, #faf5ff 100%); min-height: 100vh; padding-top: 5rem;">
+            <style>
+                .dark #hero {
+                    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
+                }
+                @media screen and (-moz-appearance: none) {
+                    #hero {
+                        background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 50%, #faf5ff 100%) !important;
+                    }
+                    .dark #hero {
+                        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%) !important;
+                    }
+                }
+                @media (min-width: 1024px) {
+                    #hero {
+                        padding-top: 6rem;
+                    }
+                }
+            </style>
+            <div class="container-custom text-center relative z-10">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Profile Image -->
+                    <div class="mb-8" data-animate="fade-in" data-animate-delay="200">
+                        <div class="w-32 h-32 lg:w-40 lg:h-40 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1 shadow-xl">
+                            <img 
+                                src="assets/portfolio.jpg" 
+                                alt="Tamil Selvan C - Solution Architect & Technical Leader" 
+                                class="w-full h-full rounded-full object-cover"
+                                loading="eager"
+                                onload="this.style.opacity=1"
+                                style="opacity: 0; transition: opacity 0.3s ease;"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            >
+                            <!-- Fallback initials if image fails to load -->
+                            <div class="w-full h-full rounded-full bg-white dark:bg-slate-800 flex items-center justify-center text-4xl lg:text-5xl font-bold text-blue-600 dark:text-blue-400" style="display: none;">
+                                TC
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Name and Title -->
+                    <div class="mb-6" data-animate="fade-in-up" data-animate-delay="400">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-4">
+                            Tamil Selvan C
+                        </h1>
+                        <div class="text-xl lg:text-2xl text-slate-600 dark:text-slate-300 mb-2">
+                            <span data-typewriter data-typewriter-texts='["Solution Architect", "Technical Leader", "Backend Developer", "DevOps Engineer", "Cloud Specialist"]'>
+                                Solution Architect
+                            </span>
+                            <span class="animate-pulse">|</span>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="mb-8" data-animate="fade-in-up" data-animate-delay="600">
+                        <p class="text-lg lg:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                            13+ years of experience in designing, deploying, and managing scalable web and mobile applications. 
+                            Specializing in "Efficiency-First" architectures that prioritize cost-optimization and reliability.
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8" data-animate="fade-in-up" data-animate-delay="800">
+                        <button 
+                            data-cta-button 
+                            data-cta-action="scroll" 
+                            data-cta-target="portfolio"
+                            class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-blue-600 border border-transparent rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 ease-in-out w-full sm:w-auto"
+                        >
+                            View My Work
+                        </button>
+                        <button 
+                            data-cta-button 
+                            data-cta-action="scroll" 
+                            data-cta-target="contact"
+                            class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-blue-600 dark:text-blue-400 bg-transparent border-2 border-blue-600 dark:border-blue-400 rounded-lg hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 ease-in-out w-full sm:w-auto"
+                        >
+                            Get In Touch
+                        </button>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="flex justify-center space-x-6" data-animate="fade-in-up" data-animate-delay="1000">
+                        <a href="https://linkedin.com/in/tamilselvan" target="_blank" rel="noopener noreferrer" data-social-link data-social-platform="linkedin" class="inline-flex items-center justify-center w-12 h-12 text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 ease-in-out shadow-md" aria-label="LinkedIn Profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/tamilselvan" target="_blank" rel="noopener noreferrer" data-social-link data-social-platform="github" class="inline-flex items-center justify-center w-12 h-12 text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 ease-in-out shadow-md" aria-label="GitHub Profile">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="mailto:admin@tamilcselvan.com" target="_blank" rel="noopener noreferrer" data-social-link data-social-platform="email" class="inline-flex items-center justify-center w-12 h-12 text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 ease-in-out shadow-md" aria-label="Email Contact">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Elements -->
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 dark:bg-blue-900 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-70 animate-pulse"></div>
+                <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200 dark:bg-purple-900 rounded-full mix-blend-multiply dark:mix-blend-screen filter blur-xl opacity-70 animate-pulse" style="animation-delay: 2s;"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 lg:py-24 bg-white dark:bg-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mb-6" data-animate="fade-up">About Me</h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto" data-animate="fade-up" data-animate-delay="200">
+                        Discover my journey as a Solution Architect and Technical Leader, building scalable solutions that drive business success.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <!-- Bio Section -->
+                    <div data-animate="fade-up" data-animate-delay="400">
+                        <!-- Profile Image for About Section -->
+                        <div class="mb-8 lg:hidden">
+                            <div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1 shadow-lg">
+                                <img 
+                                    src="assets/portfolio.jpg" 
+                                    alt="Tamil Selvan C" 
+                                    class="w-full h-full rounded-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">My Story</h3>
+                        <div class="prose prose-lg dark:prose-invert max-w-none">
+                            <p class="text-slate-600 dark:text-slate-300 mb-6">
+                                I am a Solution Architect and Technical Leader with over 13 years of experience in designing, deploying, and managing scalable web and mobile applications. My expertise lies at the intersection of robust backend development and automated infrastructure.
+                            </p>
+                            <p class="text-slate-600 dark:text-slate-300 mb-6">
+                                Throughout my career, I have evolved from a core developer into a leadership role where I bridge the gap between business requirements and high-performance technical solutions. I specialize in building "Efficiency-First" architectures that prioritize cost-optimization and reliability.
+                            </p>
+                            <p class="text-slate-600 dark:text-slate-300 mb-8">
+                                I am a strong believer in servant leadership. As an Assistant Manager, I pride myself on guiding technical teams, fostering a culture of continuous learning, and solving complex blockers to ensure on-time delivery.
+                            </p>
+                        </div>
+
+                        <!-- Download Resume Button -->
+                        <button data-cta-button data-cta-action="download" data-cta-target="/assets/documents/resume.pdf" class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-blue-600 border border-transparent rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 ease-in-out">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            Download Resume
+                        </button>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div data-animate="fade-up" data-animate-delay="600">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-8">Core Expertise</h3>
+                        
+                        <!-- Technical Skills -->
+                        <div class="mb-8">
+                            <h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200 mb-4">Technical Skills</h4>
+                            <div class="space-y-4">
+                                <div data-skill-bar data-skill-percentage="95">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Architecture & Design</span>
+                                        <span class="text-sm text-slate-500 dark:text-slate-400">95%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3 overflow-hidden">
+                                        <div class="skill-progress h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                                    </div>
+                                </div>
+
+                                <div data-skill-bar data-skill-percentage="90">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Backend Development (PHP, Python)</span>
+                                        <span class="text-sm text-slate-500 dark:text-slate-400">90%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3 overflow-hidden">
+                                        <div class="skill-progress h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                                    </div>
+                                </div>
+
+                                <div data-skill-bar data-skill-percentage="88">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">DevOps & Automation</span>
+                                        <span class="text-sm text-slate-500 dark:text-slate-400">88%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3 overflow-hidden">
+                                        <div class="skill-progress h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                                    </div>
+                                </div>
+
+                                <div data-skill-bar data-skill-percentage="85">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Cloud & Infrastructure (AWS)</span>
+                                        <span class="text-sm text-slate-500 dark:text-slate-400">85%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3 overflow-hidden">
+                                        <div class="skill-progress h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                                    </div>
+                                </div>
+
+                                <div data-skill-bar data-skill-percentage="82">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-sm font-medium text-slate-700 dark:text-slate-300">Database Management</span>
+                                        <span class="text-sm text-slate-500 dark:text-slate-400">82%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-3 overflow-hidden">
+                                        <div class="skill-progress h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technology Stack -->
+                        <div>
+                            <h4 class="text-lg font-semibold text-slate-800 dark:text-slate-200 mb-4">Technology Stack</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">PHP</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Python</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">FastAPI</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Docker</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">AWS</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">MySQL</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">PostgreSQL</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Jenkins</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">GitHub Actions</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Terraform</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Ansible</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Nginx</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Apache</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Prometheus</span>
+                                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-900 rounded-full mr-2 mb-2">Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Timeline -->
+                <div class="mt-20">
+                    <div class="text-center mb-12">
+                        <h3 class="text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white mb-4" data-animate="fade-up">Professional Journey</h3>
+                        <p class="text-lg text-slate-600 dark:text-slate-300" data-animate="fade-up" data-animate-delay="200">
+                            Key milestones in my career progression
+                        </p>
+                    </div>
+
+                    <div class="relative">
+                        <!-- Timeline Line -->
+                        <div class="absolute left-4 lg:left-1/2 transform lg:-translate-x-px top-0 bottom-0 w-0.5 bg-blue-200 dark:bg-blue-800"></div>
+
+                        <!-- Timeline Items -->
+                        <div class="space-y-12">
+                            <div class="relative flex items-center" data-timeline-item data-animate="fade-up" data-animate-delay="400">
+                                <div class="absolute left-0 lg:left-1/2 transform lg:-translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full border-4 border-white dark:border-slate-900 shadow-lg flex items-center justify-center">
+                                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                                </div>
+                                <div class="ml-16 lg:ml-0 lg:w-1/2 lg:pr-8 lg:text-right">
+                                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-soft border border-gray-200 dark:border-slate-700">
+                                        <div class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-1">2020 - Present</div>
+                                        <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Assistant Manager & Solution Architect</h4>
+                                        <p class="text-slate-600 dark:text-slate-300 mb-3">Leading technical teams and architecting scalable solutions for enterprise clients.</p>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="tech-tag">Team Leadership</span>
+                                            <span class="tech-tag">Solution Architecture</span>
+                                            <span class="tech-tag">AWS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative flex items-center lg:flex-row-reverse" data-timeline-item data-animate="fade-up" data-animate-delay="600">
+                                <div class="absolute left-0 lg:left-1/2 transform lg:-translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full border-4 border-white dark:border-slate-900 shadow-lg flex items-center justify-center">
+                                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                                </div>
+                                <div class="ml-16 lg:ml-0 lg:w-1/2 lg:pl-8">
+                                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-soft border border-gray-200 dark:border-slate-700">
+                                        <div class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-1">2016 - 2020</div>
+                                        <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Senior Backend Developer</h4>
+                                        <p class="text-slate-600 dark:text-slate-300 mb-3">Specialized in building high-performance backend systems and API architectures.</p>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="tech-tag">PHP</span>
+                                            <span class="tech-tag">Python</span>
+                                            <span class="tech-tag">API Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative flex items-center" data-timeline-item data-animate="fade-up" data-animate-delay="800">
+                                <div class="absolute left-0 lg:left-1/2 transform lg:-translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full border-4 border-white dark:border-slate-900 shadow-lg flex items-center justify-center">
+                                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                                </div>
+                                <div class="ml-16 lg:ml-0 lg:w-1/2 lg:pr-8 lg:text-right">
+                                    <div class="bg-white dark:bg-slate-800 p-6 rounded-lg shadow-soft border border-gray-200 dark:border-slate-700">
+                                        <div class="text-sm text-blue-600 dark:text-blue-400 font-semibold mb-1">2011 - 2016</div>
+                                        <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Full Stack Developer</h4>
+                                        <p class="text-slate-600 dark:text-slate-300 mb-3">Started career building complete web applications from frontend to backend.</p>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="tech-tag">Web Development</span>
+                                            <span class="tech-tag">Database Design</span>
+                                            <span class="tech-tag">UI/UX</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16 lg:py-24 bg-slate-50 dark:bg-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mb-6" data-animate="fade-up">Leadership & Expertise</h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mb-8" data-animate="fade-up" data-animate-delay="200">
+                        Transforming complex challenges into scalable solutions through strategic leadership and technical excellence
+                    </p>
+                </div>
+
+                <!-- Leadership Skills Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <!-- Technical Architecture -->
+                    <div class="skill-card bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-slate-700 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Technical Architecture</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">System Design Expert</p>
+                        <div class="text-2xl font-bold text-blue-600 dark:text-blue-400 counter" data-target="95">0</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">% Scalability Score</div>
+                    </div>
+
+                    <!-- Team Leadership -->
+                    <div class="skill-card bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-slate-700 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Team Leadership</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">People Manager</p>
+                        <div class="text-2xl font-bold text-green-600 dark:text-green-400 counter" data-target="15">0</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Teams Led</div>
+                    </div>
+
+                    <!-- DevOps Excellence -->
+                    <div class="skill-card bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-slate-700 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">DevOps Excellence</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">Automation Expert</p>
+                        <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">99.9%</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">System Uptime</div>
+                    </div>
+
+                    <!-- AI Integration -->
+                    <div class="skill-card bg-white dark:bg-slate-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-slate-700 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">AI Integration</h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">Modern Development</p>
+                        <div class="text-2xl font-bold text-orange-600 dark:text-orange-400">5x</div>
+                        <div class="text-xs text-slate-500 dark:text-slate-400">Faster Development</div>
+                    </div>
+                </div>
+
+                <!-- Key Achievements -->
+                <div class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-2xl p-8 text-white text-center mb-16">
+                    <h3 class="text-2xl lg:text-3xl font-bold mb-6">Key Achievements</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="text-4xl font-bold mb-2 counter" data-target="50">0</div>
+                            <div class="text-lg opacity-90">Projects Delivered</div>
+                            <div class="text-sm opacity-75">Successfully completed enterprise projects</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold mb-2 counter" data-target="100">0</div>
+                            <div class="text-lg opacity-90">Team Members Mentored</div>
+                            <div class="text-sm opacity-75">Developers guided to success</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold mb-2 counter" data-target="15">0</div>
+                            <div class="text-lg opacity-90">Years Experience</div>
+                            <div class="text-sm opacity-75">In technical leadership roles</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Stack -->
+                <div class="mb-16">
+                    <div class="text-center mb-12">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Technology Leadership Stack</h3>
+                        <p class="text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                            Leveraging cutting-edge technologies to build scalable, efficient, and maintainable solutions
+                        </p>
+                    </div>
+                    
+                    <!-- Technology Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+                        <!-- Python -->
+                        <div class="group bg-white dark:bg-slate-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.26-.02.21-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25c-.2 0-.37.09-.5.27-.14.18-.21.42-.21.72 0 .3.07.54.21.72.13.18.3.27.5.27.2 0 .37-.09.5-.27.14-.18.21-.42.21-.72 0-.3-.07-.54-.21-.72-.13-.18-.3-.27-.5-.27zm5.76 0c-.2 0-.37.09-.5.27-.14.18-.21.42-.21.72 0 .3.07.54.21.72.13.18.3.27.5.27.2 0 .37-.09.5-.27.14-.18.21-.42.21-.72 0-.3-.07-.54-.21-.72-.13-.18-.3-.27-.5-.27z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-1">Python</h4>
+                            <div class="flex justify-center">
+                                <div class="flex space-x-1">
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PHP -->
+                        <div class="group bg-white dark:bg-slate-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .982-.122 1.292-.391.313-.27.47-.628.47-1.074 0-.3-.093-.537-.28-.712-.188-.175-.462-.262-.825-.262v-.009zm5.17 0h-.943l-.516 2.648h.838c.557 0 .983-.122 1.293-.391.312-.27.47-.628.47-1.074 0-.3-.094-.537-.281-.712-.188-.175-.463-.262-.826-.262h-.035v-.009z"/>
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 14.11c-.35.27-.83.41-1.44.41H4.18l-.31 1.58H2.53l1.18-6.05h2.87c.7 0 1.24.17 1.63.52.39.35.58.85.58 1.49 0 .72-.21 1.3-.64 1.75v.1zm5.32 0c-.35.27-.83.41-1.44.41H9.5l-.31 1.58H7.85l1.18-6.05h2.87c.7 0 1.24.17 1.63.52.39.35.58.85.58 1.49 0 .72-.21 1.3-.64 1.75v.1zm5.15-2.62c-.54 0-.97.26-1.29.78l-.19-.62h-1.29l-.73 3.75h1.36l.34-1.74c.08-.42.21-.73.39-.93.18-.2.42-.3.72-.3.18 0 .35.04.51.13l.19-1.18c-.16-.06-.33-.09-.51-.09h.5z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-1">PHP</h4>
+                            <div class="flex justify-center">
+                                <div class="flex space-x-1">
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AWS -->
+                        <div class="group bg-white dark:bg-slate-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-1">AWS</h4>
+                            <div class="flex justify-center">
+                                <div class="flex space-x-1">
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-slate-300 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Docker -->
+                        <div class="group bg-white dark:bg-slate-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.186m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338 0-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983 0 1.97-.084 2.944-.25 1.32-.225 2.595-.62 3.78-1.177 1.8-.85 3.32-2.12 4.555-3.8.425-.598 1.017-1.617 1.017-2.124 0-.045-.013-.084-.04-.113z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-1">Docker</h4>
+                            <div class="flex justify-center">
+                                <div class="flex space-x-1">
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-slate-300 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Jenkins -->
+                        <div class="group bg-white dark:bg-slate-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-1">Jenkins</h4>
+                            <div class="flex justify-center">
+                                <div class="flex space-x-1">
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI Tools -->
+                        <div class="group bg-white dark:bg-slate-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-sm font-semibold text-slate-900 dark:text-white mb-1">AI Tools</h4>
+                            <div class="flex justify-center">
+                                <div class="flex space-x-1">
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
+                                    <div class="w-1.5 h-1.5 bg-slate-300 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Technologies -->
+                    <div class="bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-700 rounded-2xl p-6">
+                        <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-4 text-center">Additional Expertise</h4>
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <span class="px-4 py-2 bg-white dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:border-slate-500">FastAPI</span>
+                            <span class="px-4 py-2 bg-white dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:border-slate-500">Kubernetes</span>
+                            <span class="px-4 py-2 bg-white dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:border-slate-500">Terraform</span>
+                            <span class="px-4 py-2 bg-white dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:border-slate-500">GitHub Actions</span>
+                            <span class="px-4 py-2 bg-white dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:border-slate-500">Prometheus</span>
+                            <span class="px-4 py-2 bg-white dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:border-slate-500">MySQL</span>
+                            <span class="px-4 py-2 bg-white dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:border-slate-500">PostgreSQL</span>
+                            <span class="px-4 py-2 bg-white dark:bg-slate-600 text-slate-700 dark:text-slate-200 rounded-full text-sm font-medium shadow-sm border border-slate-200 dark:border-slate-500">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership Philosophy -->
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-white dark:bg-slate-800 rounded-xl p-8 shadow-lg border border-gray-200 dark:border-slate-700 text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Leadership Philosophy</h3>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 mb-6 max-w-3xl mx-auto">
+                            "Empowering teams through servant leadership, driving innovation with AI-powered development, 
+                            and building scalable solutions that prioritize efficiency and cost-optimization."
+                        </p>
+                        <div class="flex justify-center space-x-8">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">Servant</div>
+                                <div class="text-sm text-slate-600 dark:text-slate-400">Leadership</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">Innovation</div>
+                                <div class="text-sm text-slate-600 dark:text-slate-400">Driven</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-pink-600 dark:text-pink-400">Efficiency</div>
+                                <div class="text-sm text-slate-600 dark:text-slate-400">First</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 lg:py-24 bg-white dark:bg-slate-900">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mb-6" data-animate="fade-up">Get In Touch</h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto" data-animate="fade-up" data-animate-delay="200">
+                        Ready to discuss your next project or explore collaboration opportunities? Let's connect and build something amazing together.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-16">
+                    <!-- Contact Information -->
+                    <div data-animate="fade-up" data-animate-delay="400">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-8">Let's Connect</h3>
+                        
+                        <!-- Contact Methods -->
+                        <div class="space-y-6 mb-8">
+                            <!-- Email -->
+                            <div class="flex items-center group">
+                                <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mr-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 transition-colors">
+                                    <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Email</p>
+                                    <button data-copy-email data-email="admin@tamilcselvan.com" class="text-slate-900 dark:text-white font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                                        admin@tamilcselvan.com
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Location</p>
+                                    <p class="text-slate-900 dark:text-white font-medium">Kanya Kumari, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+
+                            <!-- Response Time -->
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-slate-500 dark:text-slate-400 mb-1">Response Time</p>
+                                    <p class="text-slate-900 dark:text-white font-medium">Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div>
+                            <h4 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://linkedin.com/in/tamilcselvan" data-social-link data-social-platform="linkedin" class="inline-flex items-center justify-center w-12 h-12 text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 ease-in-out" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/tamilcselvan" data-social-link data-social-platform="github" class="inline-flex items-center justify-center w-12 h-12 text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 ease-in-out" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                                <a href="mailto:admin@tamilcselvan.com" data-social-link data-social-platform="email" class="inline-flex items-center justify-center w-12 h-12 text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 ease-in-out" aria-label="Email Contact">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div data-animate="fade-up" data-animate-delay="600">
+                        <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-8">Send a Message</h3>
+                        
+                        <!-- Message Container -->
+                        <div data-message-container class="hidden mb-6"></div>
+
+                        <!-- Contact Form -->
+                        <form data-contact-form class="space-y-6">
+                            <!-- Name and Email Row -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                                        Name *
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="name" 
+                                        name="name" 
+                                        required 
+                                        class="block w-full px-4 py-3 text-base text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                                        placeholder="Your full name"
+                                    >
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                                        Email *
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        required 
+                                        class="block w-full px-4 py-3 text-base text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                                        placeholder="your.email@example.com"
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Subject -->
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                                    Subject
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="block w-full px-4 py-3 text-base text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"
+                                    placeholder="What's this about?"
+                                >
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                                    Message *
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    required 
+                                    rows="6" 
+                                    class="block w-full px-4 py-3 text-base text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 min-h-[120px] transition-colors duration-200"
+                                    placeholder="Tell me about your project, ideas, or just say hello..."
+                                    style="resize: vertical;"
+                                ></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div>
+                                <button 
+                                    type="submit" 
+                                    data-submit-button 
+                                    class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-blue-600 border border-transparent rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 ease-in-out w-full md:w-auto"
+                                >
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                    </svg>
+                                    Send Message
+                                </button>
+                            </div>
+
+                            <!-- Form Note -->
+                            <p class="text-sm text-slate-500 dark:text-slate-400">
+                                * Required fields. I'll get back to you within 24 hours.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container-custom">
+            <div class="text-center">
+                <p class="text-slate-400 mb-4">
+                    © 2024 Tamil Selvan C. All rights reserved.
+                </p>
+                <p class="text-slate-500 text-sm">
+                    Built with passion for creating efficient solutions.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main-test.js"></script>
 </body>
 </html>

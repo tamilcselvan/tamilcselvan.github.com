@@ -1,0 +1,286 @@
+{
+  "skills": [
+    {
+      "name": "PHP",
+      "category": "backend",
+      "proficiency": 95,
+      "years_experience": 15,
+      "icon": "php"
+    },
+    {
+      "name": "Python",
+      "category": "backend",
+      "proficiency": 88,
+      "years_experience": 8,
+      "icon": "python"
+    },
+    {
+      "name": "FastAPI",
+      "category": "backend",
+      "proficiency": 85,
+      "years_experience": 4,
+      "icon": "fastapi"
+    },
+    {
+      "name": "JavaScript",
+      "category": "frontend",
+      "proficiency": 82,
+      "years_experience": 10,
+      "icon": "javascript"
+    },
+    {
+      "name": "MySQL",
+      "category": "database",
+      "proficiency": 92,
+      "years_experience": 12,
+      "icon": "mysql"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "database",
+      "proficiency": 85,
+      "years_experience": 7,
+      "icon": "postgresql"
+    },
+    {
+      "name": "MariaDB",
+      "category": "database",
+      "proficiency": 88,
+      "years_experience": 9,
+      "icon": "mariadb"
+    },
+    {
+      "name": "Docker",
+      "category": "devops",
+      "proficiency": 90,
+      "years_experience": 6,
+      "icon": "docker"
+    },
+    {
+      "name": "Kubernetes",
+      "category": "devops",
+      "proficiency": 78,
+      "years_experience": 4,
+      "icon": "kubernetes"
+    },
+    {
+      "name": "AWS",
+      "category": "cloud",
+      "proficiency": 87,
+      "years_experience": 8,
+      "icon": "aws"
+    },
+    {
+      "name": "Terraform",
+      "category": "devops",
+      "proficiency": 82,
+      "years_experience": 5,
+      "icon": "terraform"
+    },
+    {
+      "name": "Ansible",
+      "category": "devops",
+      "proficiency": 80,
+      "years_experience": 5,
+      "icon": "ansible"
+    },
+    {
+      "name": "Jenkins",
+      "category": "devops",
+      "proficiency": 85,
+      "years_experience": 7,
+      "icon": "jenkins"
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "devops",
+      "proficiency": 88,
+      "years_experience": 4,
+      "icon": "github"
+    },
+    {
+      "name": "Prometheus",
+      "category": "monitoring",
+      "proficiency": 83,
+      "years_experience": 4,
+      "icon": "prometheus"
+    },
+    {
+      "name": "Grafana",
+      "category": "monitoring",
+      "proficiency": 85,
+      "years_experience": 4,
+      "icon": "grafana"
+    },
+    {
+      "name": "Nginx",
+      "category": "infrastructure",
+      "proficiency": 90,
+      "years_experience": 10,
+      "icon": "nginx"
+    },
+    {
+      "name": "Apache",
+      "category": "infrastructure",
+      "proficiency": 88,
+      "years_experience": 12,
+      "icon": "apache"
+    },
+    {
+      "name": "Linux",
+      "category": "infrastructure",
+      "proficiency": 92,
+      "years_experience": 13,
+      "icon": "linux"
+    },
+    {
+      "name": "Git",
+      "category": "tools",
+      "proficiency": 95,
+      "years_experience": 11,
+      "icon": "git"
+    }
+  ],
+  "categories": [
+    {
+      "id": "backend",
+      "name": "Backend Development",
+      "description": "Server-side programming languages and frameworks",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend Development",
+      "description": "Client-side technologies and user interfaces",
+      "color": "#10b981"
+    },
+    {
+      "id": "database",
+      "name": "Database Management",
+      "description": "Database design, optimization, and administration",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & Automation",
+      "description": "CI/CD, containerization, and infrastructure automation",
+      "color": "#ef4444"
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud Platforms",
+      "description": "Cloud services and architecture",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "monitoring",
+      "name": "Monitoring & Observability",
+      "description": "Application and infrastructure monitoring tools",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure",
+      "description": "Web servers, operating systems, and networking",
+      "color": "#84cc16"
+    },
+    {
+      "id": "tools",
+      "name": "Development Tools",
+      "description": "Version control and development utilities",
+      "color": "#6b7280"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "type": "work",
+      "title": "Assistant Manager - Technical",
+      "organization": "Current Company",
+      "location": "Remote",
+      "start_date": "2020-03-01",
+      "end_date": null,
+      "current": true,
+      "description": [
+        "Lead technical teams in designing and implementing scalable web and mobile applications",
+        "Architect cloud-based solutions using AWS services including RDS, Lambda, and Lightsail",
+        "Implement DevOps practices with CI/CD pipelines using Jenkins and GitHub Actions",
+        "Manage infrastructure as code using Terraform and Ansible for automated deployments"
+      ],
+      "achievements": [
+        "Reduced deployment time by 70% through automation",
+        "Led migration of 5 legacy applications to cloud infrastructure",
+        "Implemented monitoring solutions that reduced downtime by 85%",
+        "Mentored 8 junior developers in modern development practices"
+      ],
+      "technologies": ["PHP", "Python", "AWS", "Docker", "Kubernetes", "Terraform"]
+    },
+    {
+      "id": "exp-2",
+      "type": "work",
+      "title": "Senior Software Engineer",
+      "organization": "Previous Company",
+      "location": "Hybrid",
+      "start_date": "2017-06-01",
+      "end_date": "2020-02-28",
+      "current": false,
+      "description": [
+        "Developed and maintained high-performance web applications using PHP and MySQL",
+        "Implemented automated testing and deployment processes",
+        "Collaborated with cross-functional teams to deliver complex projects",
+        "Optimized database performance and application scalability"
+      ],
+      "achievements": [
+        "Improved application performance by 60% through optimization",
+        "Built automated testing framework reducing bugs by 40%",
+        "Led development of 3 major product features",
+        "Established code review processes and development standards"
+      ],
+      "technologies": ["PHP", "MySQL", "JavaScript", "Docker", "Jenkins"]
+    },
+    {
+      "id": "exp-3",
+      "type": "work",
+      "title": "Software Developer",
+      "organization": "Early Career Company",
+      "location": "On-site",
+      "start_date": "2011-01-01",
+      "end_date": "2017-05-31",
+      "current": false,
+      "description": [
+        "Developed web applications using PHP, MySQL, and JavaScript",
+        "Maintained and enhanced existing software systems",
+        "Participated in full software development lifecycle",
+        "Provided technical support and troubleshooting"
+      ],
+      "achievements": [
+        "Successfully delivered 15+ web applications",
+        "Reduced system maintenance time by 30%",
+        "Implemented responsive design for mobile compatibility",
+        "Contributed to team knowledge sharing initiatives"
+      ],
+      "technologies": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "id": "edu-1",
+      "type": "education",
+      "title": "Bachelor of Engineering in Computer Science",
+      "organization": "University Name",
+      "location": "Location",
+      "start_date": "2007-06-01",
+      "end_date": "2011-05-31",
+      "current": false,
+      "description": [
+        "Comprehensive study of computer science fundamentals",
+        "Focus on software engineering and system design",
+        "Participated in various technical projects and competitions"
+      ],
+      "achievements": [
+        "Graduated with First Class Honors",
+        "Led final year project on web application development",
+        "Active member of computer science society"
+      ],
+      "technologies": ["Java", "C++", "Database Systems", "Software Engineering"]
+    }
+  ]
+}

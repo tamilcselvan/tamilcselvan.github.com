@@ -1,0 +1,208 @@
+{
+  "projects": [
+    {
+      "id": "enterprise-api-gateway",
+      "title": "Enterprise API Gateway",
+      "shortDescription": "Scalable microservices architecture with automated deployment pipeline",
+      "description": "Designed and implemented a comprehensive API gateway solution for a Fortune 500 company, handling 10M+ requests daily. The system features automatic load balancing, rate limiting, authentication, and real-time monitoring.",
+      "category": ["backend", "architecture"],
+      "technologies": ["Python", "FastAPI", "Docker", "AWS", "Redis", "PostgreSQL", "Nginx"],
+      "images": {
+        "thumbnail": "/assets/images/projects/api-gateway-thumb.jpg",
+        "gallery": [
+          "/assets/images/projects/api-gateway-1.jpg",
+          "/assets/images/projects/api-gateway-2.jpg",
+          "/assets/images/projects/api-gateway-3.jpg"
+        ]
+      },
+      "links": {
+        "case_study": "#case-study-api-gateway"
+      },
+      "featured": true,
+      "date": "2023-08",
+      "status": "completed",
+      "achievements": [
+        "Reduced API response time by 40%",
+        "Improved system reliability to 99.9% uptime",
+        "Automated deployment reduced release time by 60%"
+      ]
+    },
+    {
+      "id": "cloud-infrastructure-automation",
+      "title": "Cloud Infrastructure Automation",
+      "shortDescription": "Infrastructure as Code solution with automated scaling and monitoring",
+      "description": "Built a comprehensive Infrastructure as Code solution using Terraform and Ansible, enabling automated provisioning, scaling, and monitoring of cloud resources across multiple AWS regions.",
+      "category": ["devops", "cloud"],
+      "technologies": ["Terraform", "Ansible", "AWS", "Jenkins", "Prometheus", "Grafana", "Docker"],
+      "images": {
+        "thumbnail": "/assets/images/projects/cloud-infra-thumb.jpg",
+        "gallery": [
+          "/assets/images/projects/cloud-infra-1.jpg",
+          "/assets/images/projects/cloud-infra-2.jpg"
+        ]
+      },
+      "links": {
+        "github": "https://github.com/tamilcselvan/cloud-automation",
+        "case_study": "#case-study-cloud-infra"
+      },
+      "featured": true,
+      "date": "2023-06",
+      "status": "completed",
+      "achievements": [
+        "Reduced infrastructure costs by 35%",
+        "Automated 90% of deployment processes",
+        "Improved monitoring coverage to 100%"
+      ]
+    },
+    {
+      "id": "mobile-app-backend",
+      "title": "Mobile App Backend Platform",
+      "shortDescription": "High-performance backend supporting 500K+ active users",
+      "description": "Developed a robust backend platform for a mobile application serving over 500,000 active users. Features include real-time notifications, data synchronization, and advanced analytics.",
+      "category": ["backend", "mobile"],
+      "technologies": ["PHP", "Laravel", "MySQL", "Redis", "AWS Lambda", "Firebase"],
+      "images": {
+        "thumbnail": "/assets/images/projects/mobile-backend-thumb.jpg",
+        "gallery": [
+          "/assets/images/projects/mobile-backend-1.jpg",
+          "/assets/images/projects/mobile-backend-2.jpg"
+        ]
+      },
+      "links": {
+        "live": "https://app.example.com",
+        "case_study": "#case-study-mobile-backend"
+      },
+      "featured": true,
+      "date": "2023-03",
+      "status": "completed",
+      "achievements": [
+        "Supports 500K+ concurrent users",
+        "99.95% uptime achieved",
+        "Real-time sync with <100ms latency"
+      ]
+    },
+    {
+      "id": "ecommerce-platform",
+      "title": "E-commerce Platform Modernization",
+      "shortDescription": "Legacy system migration to modern microservices architecture",
+      "description": "Led the modernization of a legacy e-commerce platform, migrating from monolithic architecture to microservices. Improved performance, scalability, and maintainability while ensuring zero downtime during migration.",
+      "category": ["architecture", "backend"],
+      "technologies": ["Python", "Django", "PostgreSQL", "Docker", "Kubernetes", "AWS"],
+      "images": {
+        "thumbnail": "/assets/images/projects/ecommerce-thumb.jpg",
+        "gallery": [
+          "/assets/images/projects/ecommerce-1.jpg",
+          "/assets/images/projects/ecommerce-2.jpg",
+          "/assets/images/projects/ecommerce-3.jpg"
+        ]
+      },
+      "links": {
+        "case_study": "#case-study-ecommerce"
+      },
+      "featured": false,
+      "date": "2022-11",
+      "status": "completed",
+      "achievements": [
+        "Zero downtime migration",
+        "50% improvement in page load times",
+        "Reduced infrastructure costs by 25%"
+      ]
+    },
+    {
+      "id": "monitoring-dashboard",
+      "title": "Real-time Monitoring Dashboard",
+      "shortDescription": "Comprehensive monitoring solution with predictive analytics",
+      "description": "Created a real-time monitoring dashboard for infrastructure and application metrics, featuring predictive analytics, automated alerting, and custom visualization tools.",
+      "category": ["devops", "monitoring"],
+      "technologies": ["Prometheus", "Grafana", "Python", "InfluxDB", "Docker", "Kubernetes"],
+      "images": {
+        "thumbnail": "/assets/images/projects/monitoring-thumb.jpg",
+        "gallery": [
+          "/assets/images/projects/monitoring-1.jpg",
+          "/assets/images/projects/monitoring-2.jpg"
+        ]
+      },
+      "links": {
+        "github": "https://github.com/tamilcselvan/monitoring-dashboard",
+        "case_study": "#case-study-monitoring"
+      },
+      "featured": false,
+      "date": "2022-08",
+      "status": "completed",
+      "achievements": [
+        "Reduced incident response time by 70%",
+        "Predictive alerts prevent 85% of outages",
+        "Custom metrics for business insights"
+      ]
+    },
+    {
+      "id": "ci-cd-pipeline",
+      "title": "Advanced CI/CD Pipeline",
+      "shortDescription": "Automated deployment pipeline with security scanning and testing",
+      "description": "Designed and implemented a comprehensive CI/CD pipeline featuring automated testing, security scanning, code quality checks, and multi-environment deployments with rollback capabilities.",
+      "category": ["devops", "automation"],
+      "technologies": ["Jenkins", "GitHub Actions", "Docker", "SonarQube", "AWS", "Terraform"],
+      "images": {
+        "thumbnail": "/assets/images/projects/cicd-thumb.jpg",
+        "gallery": [
+          "/assets/images/projects/cicd-1.jpg",
+          "/assets/images/projects/cicd-2.jpg"
+        ]
+      },
+      "links": {
+        "github": "https://github.com/tamilcselvan/advanced-cicd",
+        "case_study": "#case-study-cicd"
+      },
+      "featured": false,
+      "date": "2022-05",
+      "status": "completed",
+      "achievements": [
+        "Automated 95% of deployment processes",
+        "Reduced deployment time from hours to minutes",
+        "Zero failed deployments in production"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Projects",
+      "count": 6
+    },
+    {
+      "id": "backend",
+      "name": "Backend Development",
+      "count": 3
+    },
+    {
+      "id": "architecture",
+      "name": "Solution Architecture",
+      "count": 2
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & Automation",
+      "count": 3
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud Infrastructure",
+      "count": 1
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile Backend",
+      "count": 1
+    },
+    {
+      "id": "monitoring",
+      "name": "Monitoring & Analytics",
+      "count": 1
+    },
+    {
+      "id": "automation",
+      "name": "Process Automation",
+      "count": 1
+    }
+  ]
+}
